@@ -14,7 +14,7 @@ class AddStudent implements ActionListener{
             
     public void actionPerformed(ActionEvent e){
         
-    JDialog dialog=new JDialog();
+    final JDialog dialog=new JDialog();
     JButton w=new JButton("Add student");
     
     dialog.setLayout(null);
@@ -22,8 +22,8 @@ class AddStudent implements ActionListener{
     dialog.setVisible(true);
     dialog.setLocationRelativeTo(null);
     
-    JComboBox dd,nn,ff,ii,oo,pp;
-    JTextField aa,bb,cc,kk,ll,gg,hh,jj; 
+    final JComboBox dd,nn,ff,ii,oo,pp;
+    final JTextField aa,bb,cc,kk,ll,gg,hh,jj; 
     JLabel a,b,c,d,n,f,k,l,g,h,j,i,o,p;
     
     a=new JLabel("First name");
@@ -180,8 +180,9 @@ class AddStudent implements ActionListener{
     w.setBounds(40,380, 250, 50);
     dialog.add(w);
     
-    w.addActionListener(new ActionListener(){
-        
+    
+ w.addActionListener(new ActionListener(){
+       
         public void actionPerformed(ActionEvent e){
             
             String aaa,bbb,ccc,lll,ggg,hhh;
@@ -190,17 +191,17 @@ class AddStudent implements ActionListener{
             aaa=aa.getText();//First name
             bbb=bb.getText();//Last name
             ccc=cc.getText();//Position
-            ddd=dd.getSelectedIndex();//Birth day
-            nnn=nn.getSelectedIndex();//Birth month
-            fff=ff.getSelectedIndex();//Birth year
+            ddd=dd.getSelectedIndex()+1;//Birth day
+            nnn=nn.getSelectedIndex()+1;//Birth month
+            fff=ff.getSelectedIndex()+1970;//Birth year
             kkk=Integer.parseInt(kk.getText());//Effectiveness
             lll=ll.getText();//Id
             ggg=gg.getText();//Group
             hhh=hh.getText();//Course name
             jjj=Integer.parseInt(jj.getText());//Course
-            iii=ii.getSelectedIndex();//Course start day
-            ooo=oo.getSelectedIndex();//Course start month
-            ppp=pp.getSelectedIndex();//Course start year
+            iii=ii.getSelectedIndex()+1;//Course start day
+            ooo=oo.getSelectedIndex()+1;//Course start month
+            ppp=pp.getSelectedIndex()+2000;//Course start year
             
             Student s=new Student();
             
@@ -217,10 +218,8 @@ class AddStudent implements ActionListener{
             s.setCourse(jjj);
             s.setDay(iii);
             s.setCourseStartMonth(ooo);
-            s.setCourseStartYear(ppp);
-            
+            s.setCourseStartYear(ppp);           
             students.add(s);
-            
             dialog.dispose();
         }
     
