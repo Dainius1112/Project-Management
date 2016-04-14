@@ -4,71 +4,65 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import model.UniversityProject;
 
 
-public class AddProject {
+public class AddProject implements ActionListener {
         
-    public AddProject(){
-     
-     addProjectGUI();   
-    }
-        public JPanel addProjectGUI(){
-            
+
+        public void actionPerformed(ActionEvent e){
         
+        JFrame frame=new JFrame("Add student");
         
-        JPanel panel=new JPanel();
-        
-        panel.setLayout(null);
+        frame.setSize(400,450);
+        frame.setLayout(null);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
         
         JLabel lname=new JLabel("Project name");
-        JLabel ldescription=new JLabel("Description");
+        JLabel ldescription=new JLabel("Description:");
         JLabel lsupervisor=new JLabel("Supervisor");
         
         JTextField tname=new JTextField();
         JTextArea tdescription=new JTextArea();
         JTextField tsupervisor=new JTextField();
         
-        JButton save=new JButton("Save");
-        JButton cancel=new JButton("Cancel");
+        JButton save=new JButton("Add project");
         
-        lname.setBounds(140,10,180,50);
-        lname.setFont(new Font("", Font.BOLD, 20));
+        lname.setBounds(10,10,100,30);
+        lname.setFont(new Font("", Font.BOLD, 15));
         
-        tname.setBounds(280,10,270,50);
-        tname.setFont(new Font("", Font.BOLD, 19));
+        tname.setBounds(120,10,200,30);
+        tname.setFont(new Font("", Font.BOLD, 15));
         
-        ldescription.setBounds(90,155,110,30);
-        ldescription.setFont(new Font("", Font.BOLD, 20));
+        ldescription.setBounds(10,50,110,30);
+        ldescription.setFont(new Font("", Font.BOLD, 15));
         
-        tdescription.setBounds(220,90,400,180);
+        tdescription.setBounds(10,90,350,180);
         tdescription.setFont(new Font("", Font.BOLD, 12));
         tdescription.setLineWrap(true);
         
-        lsupervisor.setBounds(140,280,180,50);
-        lsupervisor.setFont(new Font("", Font.BOLD, 20));
+        lsupervisor.setBounds(10,280,100,30);
+        lsupervisor.setFont(new Font("", Font.BOLD, 15));
         
-        tsupervisor.setBounds(280,280,270,50);
-        tsupervisor.setFont(new Font("", Font.BOLD, 20));
+        tsupervisor.setBounds(120,280,200,30);
+        tsupervisor.setFont(new Font("", Font.BOLD, 15));
 
-        save.setBounds(130,340,250,80);
+        save.setBounds(75,320,250,80);
         save.setFont(new Font("",Font.BOLD,25));
-        
-        cancel.setBounds(400,340,250,80);
-        cancel.setFont(new Font("",Font.BOLD,25));
-        
-        panel.add(lname);
-        panel.add(tname);
-        panel.add(ldescription);
-        panel.add(tdescription);
-        panel.add(lsupervisor);
-        panel.add(tsupervisor);
-        panel.add(save);
-        panel.add(cancel);
+
+        frame.add(lname);
+        frame.add(tname);
+        frame.add(ldescription);
+        frame.add(tdescription);
+        frame.add(lsupervisor);
+        frame.add(tsupervisor);
+        frame.add(save);
+
 
         save.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -79,18 +73,6 @@ public class AddProject {
                 
             }
         });
-        
-        cancel.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                
-            
-            }
-        });
-        
-        
-        return panel;
     }
 }
-
-
 
