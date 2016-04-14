@@ -1,0 +1,103 @@
+Make table parts
+Make table parts from an oak tree. You have to make sure you have made table parts perfect because in the next project we will use them. So at the start you have to make a plan what you'll need and then make a sketch. After that, go to work you have to make it the right size and the right smoothness. Also, don't forget sanding the wood is very important. And for the end make screw holes. After that, give it to the other workers to construct it. 
+F. Gayelord
+@
+Clinton
+Dunstan
+Manager
+1995 11 13
+s1324687
+Bioinformatics
+1
+2015 09 01
+#
+Receive order
+Receive order to build a table.
+2016 06 03
+#
+Counts the cost
+Counts the cost of the table
+2016 06 05
+#
+Sets the price
+Both parties agree on the price.
+2016 06 08
+#
+Send order to build
+Sends order to build the table.
+2016 06 09
+@
+Cale
+Porter
+Technologist
+1995 06 04
+s1357945
+Bioinformatics
+1
+2015 09 01
+#
+Plan the dimensions
+Plan the dimensions of the table.
+2016 06 16
+#
+Drows the sketch
+Drows the sketch how table will look like.
+2016 06 19
+#
+Chooses which bolts will be used
+Chooses which bolts will be used in the process.
+2016 06 22
+#
+Foresee manufacturing process
+Foresee manufacturing process of the table.
+2016 06 25
+@
+Beckett
+Graeme
+Machinist
+1996 01 03
+s1549234
+Bioinformatics
+1
+2015 09 01
+#
+Wood selection
+Select wood of the right size.
+2016 06 27
+#
+Wood planing
+Planing wood to smooth it out.
+2016 06 30
+#
+Sanding wood planes
+Sanding wood planes.
+2016 07 07
+#
+Edgesanding wood
+Edgesanding wood.
+2016 07 15
+@
+Ormond
+Jerry
+Machinist
+1994 12 25
+s1346846
+Bioinformatics
+1
+2015 09 01
+#
+Tabletop milling
+Tabletop milling to get the right size.
+2016 07 25
+#
+Legs milling
+Legs milling to get the right size.
+2016 08 05
+#
+Tabletop drilling
+Tabletop drilling to get ready for construction.
+2016 08 15
+#
+Legs drilling
+Legs drilling to get ready for construction.
+2016 08 30

@@ -1,0 +1,99 @@
+Make tables
+Make tables from the parts we have. We already have table parts now we need to make sure the tables are built and ready for transportation. But first we need to varnish it after that we need to lacquer it two times. If that is done, than we can start constructing a table. We use screws and glue for that. After that is done, we load it in boxes and transport it. 
+F. Gayelord
+@
+Trent
+Conway
+Decorator
+1995 05 05
+s1346897
+Bioinformatics
+1
+2016 09 01
+#
+Wood varnishing
+Wood varnishing to get the color we want.
+2016 09 05
+#
+Wood lacquering
+Wood lacquering for it to stay good for long.
+2016 09 09
+#
+Sanding
+Sanding for smooth surfaces.
+2016 09 15
+#
+2nd lacquering
+2nd lacquering.
+2016 09 21
+@
+Sly
+Rollo
+Collector
+1995 02 05
+s1495235
+Bioinformatics
+1
+2016 09 01
+#
+Glue oiling
+Oiling table parts.
+2016 09 25
+#
+Nailing dowels
+Nailing dowels for stability.
+2016 09 30
+#
+Screwdriving
+Screwdriving for stability.
+2016 10 05
+#
+Assembly of table
+Assembly of table.
+2016 10 10
+@
+Marty
+Derren
+Packer
+1994 05 04
+s1456789
+Bioinformatics
+1
+2016 09 01
+#
+Selection of packaging material
+Selection of packaging material.
+2016 10 15
+#
+Corrugated cardboard preparation
+Corrugated cardboard preparation for use.
+2016 10 17
+#
+Placing tables in protective film
+Placing tables in protective film.
+2016 10 20
+#
+Product packaging
+Product packaging for transportation.
+2016 10 25
+@
+Joe
+Roosevelt
+Manager
+1995 11 12
+s1349752
+Bioinformatics
+1
+2016 09 01
+#
+Transportation time coordination
+Time then package will be transported.
+2016 10 30
+#
+Transport booking
+Transport booking for travel.
+2016 11 02
+#
+Supervision of loading work
+Supervision of loading work.
+2016 11 04

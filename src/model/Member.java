@@ -1,3 +1,7 @@
+package model;
+
+import view.ProgramDate;
+
 import java.util.*;
 
 public class Member {
@@ -6,9 +10,46 @@ public class Member {
     private String lastName;
     private String position;
     private int birthYear, birthMonth, birthDay;
-    private int effectiveness;
     private String id;
-    ArrayList<Task> tasks = new ArrayList<Task>();
+    private ArrayList<Task> tasks = new ArrayList<Task>();
+
+    /**
+     * Calculates age
+     *
+     * @param date  current program date
+     * @return      member's age or "Unborn" if program's date is lower than member's birth date
+     */
+    public String countYears(ProgramDate date) {
+        int years;
+        int programYear = date.getProgramYear();
+        int programMonth = date.getProgramMonth();
+        int programDay = date.getProgramDay();
+        if(programYear < birthYear) {
+            return "Unborn";
+        } else {
+            years = programYear - birthYear;
+            if(programMonth - birthMonth >= 0) {
+                if(programDay - birthDay < 0) {
+                    years--;
+                }
+            } else {
+                years--;
+            }
+            return String.valueOf(years);
+        }
+    }
+
+    public String getFirstNameLetterAndLastName() {
+        return (firstName.charAt(0) + ". " + lastName);
+    }
+
+    public ArrayList<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(ArrayList<Task> tasks) {
+        this.tasks = tasks;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -58,14 +99,6 @@ public class Member {
         this.birthDay = birthDay;
     }
 
-    public int getEffectiveness() {
-        return effectiveness;
-    }
-
-    public void setEffectiveness(int effectiveness) {
-        this.effectiveness = effectiveness;
-    }
-
     public String getId() {
         return id;
     }
@@ -74,11 +107,11 @@ public class Member {
         this.id = id;
     }
     
-    void addTask(Task task){
+    public void addTask(Task task){
         tasks.add(task);
     }
-    
-    void removeTask(int task){
+
+    public void removeTask(int task){
         tasks.remove(task);
     }
 }
