@@ -127,6 +127,21 @@ public class ProjectsListJPanels {
         layout.putConstraint(SpringLayout.NORTH, editProject, 35, SpringLayout.NORTH, buttonPanel);
         buttonPanel.add(removeProject);
         layout.putConstraint(SpringLayout.NORTH, removeProject, 70, SpringLayout.NORTH, buttonPanel);
+		
+		addProject.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                frame.getFrame().remove(frame.getCenter());
+                frame.setCenter(new AddProject().addProjectGUI());
+                frame.getFrame().add(frame.getCenter());
+                frame.getFrame().remove(frame.getEast());
+         //       frame.setEast(new ProjectJPanels(frame,project).showMenu());
+                frame.getFrame().add(frame.getEast(), BorderLayout.EAST);
+                frame.getFrame().revalidate();
+                frame.getFrame().repaint();
+            }
+        });
+		
         return buttonPanel;
     }
 }
